@@ -1,0 +1,22 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.6em;
+	color: $text-color-100;
+}
+
+a {
+	text-decoration: none;
+	word-break: break-word;
+	color: $link-color-100;
+
+	&:focus,
+	&:hover,
+	&:active {
+		color: $text-color-300;
+	}
+}
+
+.page-wrapper {
+	max-width: $page-wrapper-width;
+	margin: 0 auto;
+}
