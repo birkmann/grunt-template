@@ -6,9 +6,13 @@ $susy: (
 );
 
 .section-main {
-	@include span(8); 
+	@include breakpoint(desktop) {
+		@include span(8);
+	}
 }
 
 .aside-main {
-	@include span(4 last); 
+	@include breakpoint(desktop) {
+		@include span(4 last); 
+	}
 }
