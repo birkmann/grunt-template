@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 				force: true,
 				noLineComments: true,
 				outputStyle: 'expanded',
-				require: ['sass-globbing', 'compass/import-once'],
+				require: ['sass-globbing', 'compass/import-once', 'susy'],
 				sassDir: 'source/sass/'
 			},
 			dist: {
