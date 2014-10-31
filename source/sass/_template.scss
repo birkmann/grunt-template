@@ -1,0 +1,14 @@
+@import "susy";
+
+$susy: (
+	columns: 12, 
+	global-box-sizing: border-box 
+);
+
+.section-main {
+	@include span(8); 
+}
+
+.aside-main {
+	@include span(4 last); 
+}

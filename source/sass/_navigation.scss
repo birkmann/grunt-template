@@ -6,7 +6,7 @@
 			list-style: none;
 			&.active {
 				a {
-					color: blue;
+					color: $text-color-300;
 				}
 			}
 		}
