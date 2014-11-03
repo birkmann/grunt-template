@@ -1,7 +1,17 @@
 <div class="page-wrapper">
 	<nav class="nav-main">
 		<ul>
-			<li{{#is basename "index"}} class="active"{{/is}}><a href="index.html">Home</a></li>
+			<li{{#is basename "index"}} class="active"{{/is}}>
+				<a href="index.html">Home</a>
+				<ul>
+					<li><a href="index.html">Subpage</a></li>
+					<li><a href="index.html">Subpage</a></li>
+					<li><a href="index.html">Subpage</a></li>
+					<li><a href="index.html">Subpage</a></li>
+					<li><a href="index.html">Subpage</a></li>
+					<li><a href="index.html">Subpage</a></li>
+				</ul>
+			</li>
 			<li{{#is basename "page2"}} class="active"{{/is}}><a href="page2.html">Page2</a></li>
 			<li{{#is basename "page3"}} class="active"{{/is}}><a href="page3.html">Page3</a></li>
 			<li{{#is basename "page4"}} class="active"{{/is}}><a href="page4.html">Page4</a></li>
