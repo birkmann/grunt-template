@@ -117,6 +117,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-sync');
 	grunt.loadNpmTasks('grunt-newer');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
