@@ -5,6 +5,15 @@ $susy: (
 	global-box-sizing: border-box 
 );
 
+body {
+	margin: 0;
+}
+
+.img-header {
+	width: 100%;
+	height: auto;
+}
+
 .section-main {
 	@include breakpoint(tablet) {
 		@include span(8);
