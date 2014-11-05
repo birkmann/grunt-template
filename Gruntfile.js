@@ -21,6 +21,17 @@ module.exports = function(grunt) {
 						src: ['**/*.hbs']
 					}
 				]
+			},
+			dist: {
+				files: [
+					{
+						cwd: 'source/assemble/content/_pages/',
+						dest: 'dist/',
+						expand: true,
+						flatten: true,
+						src: ['**/*.hbs']
+					}
+				]
 			}
 		},
 
@@ -36,17 +47,22 @@ module.exports = function(grunt) {
 
 		compass: {
 			options: {
-				debugInfo: false,
+				debugInfo: true,
 				force: true,
 				noLineComments: true,
 				outputStyle: 'expanded',
 				require: ['sass-globbing', 'compass/import-once', 'susy'],
 				sassDir: 'source/sass/'
 			},
-			dist: {
+			dev: {
 				options: {
 					cssDir: 'build/css/',
-					sourcemap: true,
+					sourcemap: true
+				}
+			},
+			dist: {
+				options: {
+					cssDir: 'dist/css/',
 					sourcemap: false
 				}
 			}
@@ -129,8 +145,19 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['build']);
 
 	grunt.registerTask('build', [
-		'newer:assemble',
-		'compass',
+		'newer:assemble:dev',
+		'compass:dev',
+		'cssmin',
+		'uglify',
+		'copy:images',
+		'connect',
+		'sync',
+		'watch'
+	]);
+
+	grunt.registerTask('dist', [
+		'newer:assemble:dist',
+		'compass:dist',
 		'cssmin',
 		'uglify',
 		'copy:images',
