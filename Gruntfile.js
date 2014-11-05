@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 
 		compass: {
 			options: {
-				debugInfo: true,
+				debugInfo: false,
 				force: true,
 				noLineComments: true,
 				outputStyle: 'expanded',
@@ -69,12 +69,14 @@ module.exports = function(grunt) {
 		},
 
 		cssmin: {
-			add_banner: {
-				options: {
-					banner: '/* banner */'
-				},
-				files: {
-					'build/css/main.css': ['build/css/**/*.css']
+			dist: {
+					add_banner: {
+					options: {
+						banner: '/* banner */'
+					},
+					files: {
+						'build/css/main.css': ['build/css/**/*.css']
+					}
 				}
 			}
 		},
@@ -147,7 +149,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', [
 		'newer:assemble:dev',
 		'compass:dev',
-		'cssmin',
+		//'cssmin',
 		'uglify',
 		'copy:images',
 		'connect',

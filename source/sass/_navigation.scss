@@ -1,4 +1,9 @@
 .nav-main {
+
+	@include breakpoint(tablet) {
+		float: right;
+	}
+
 	ul {
 		padding: 0;
 		margin: 0;
@@ -10,23 +15,23 @@
 			@include breakpoint(tablet) {
 				float: left;
 			}
+
 			a {
 				display: block;
+				font-size: $nav-font-size;
 				@include breakpoint(tablet) {
+					&:hover {
+						color: $text-color-100;
+					}
 					padding: 15px;
-				}
-			}
-			&.active {
-				a {
-					color: $text-color-300;
-				}
-				li a {
-					color: $link-color-100;
 				}
 			}
 
 			&:hover {
 				@include breakpoint(tablet) {
+					a {
+						background: $nav-hover-bg;
+					}
 					ul {
 						display: block;
 						position: absolute;
@@ -35,7 +40,12 @@
 							float: none;
 						}
 						a {
-							padding: 5px 15px;
+							background: none;
+							padding: 0 15px;
+							line-height: 45px;
+							&:hover {
+								background: $nav-hover-bg;
+							}
 						}
 					}
 				}

@@ -1,11 +1,22 @@
 {{>html-header}}
-	{{>site-nav}}
-	<img src="img/header.jpg" alt="" class="img-header">
+	<header class="header-main">
+		<div class="page-wrapper">
+			<a href="/" class="logo">boilerplate</a>
+			{{>site-nav}}
+		</div>
+	</header>
+	<section class="section-stage">
+		<div class="page-wrapper">
+			<div class="text">
+				<h1>The Fastest Boilerplate Yet.</h1>
+				<br>
+				<h4>Boilerplate is our fastest, best build yet. It’s packed with features to help you code and learn faster than ever before.</h4>
+			</div>
+		</div>
+	</section>
 	<div class="page-wrapper">
 		<section class="section-main">
-			<!--h2>{{this.page.title}}</h2-->
 			{{>body}}
 		</section>
-		{{>site-sidebar}}
 	</div>
 {{>html-footer}}
