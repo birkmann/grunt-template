@@ -1,12 +1,28 @@
+$menu-padding: 		15px;
+$menu-padding-lr:	0 15px;
+$menu-line-height: 	45px;
+
+.menu-toggle {
+	float: right;
+	padding: $menu-padding;
+	display: block;
+	cursor: pointer;
+	@include breakpoint(desktop) {
+		display: none;
+	}
+}
+
 .nav-main {
 
-	@include breakpoint(tablet) {
-		float: right;
-	}
+	float: right;
 
 	ul {
+		display: none;
 		padding: 0;
 		margin: 0;
+		@include breakpoint(desktop) {
+			display: block;
+		}
 
 		@include clearfix;
 
@@ -23,7 +39,7 @@
 					&:hover {
 						color: $text-color-100;
 					}
-					padding: 15px;
+					padding: $menu-padding;
 				}
 			}
 
@@ -41,8 +57,8 @@
 						}
 						a {
 							background: none;
-							padding: 0 15px;
-							line-height: 45px;
+							padding: $menu-padding-lr;
+							line-height: $menu-line-height;
 							&:hover {
 								background: $nav-hover-bg;
 							}
