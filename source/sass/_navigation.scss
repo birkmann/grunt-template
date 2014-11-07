@@ -100,7 +100,7 @@ $menu-line-height: 	45px;
 		}
 
 		ul {
-			background: #111;
+			background: $nav-mobile-lvl2-bg;
 			@include breakpoint(tablet) {
 				display: none;
 			}

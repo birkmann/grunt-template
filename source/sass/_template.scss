@@ -10,7 +10,7 @@ body {
 }
 
 .header-main {
-	background: #222;
+	background: $header-bg;
 	.page-wrapper {
 		padding: 0;
 		@include breakpoint(tablet) {
@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-	color: $text-color-300;
+	color: $logo-color;
 	font-size: 1.5em;
 	line-height: 55px;
 	float: left;
@@ -29,7 +29,7 @@ body {
 		margin: 0px;
 	}
 	&:hover {
-		color: #000;
+		color: $logo-color-hover;
 	}
 }
 
