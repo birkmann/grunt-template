@@ -14,3 +14,9 @@ $(document).ready(function(){
 	});
 
 });
+
+$(window).on("resize", function () {
+	if ($(window).width() > 799) {
+		$('.nav-main *').css('display','');
+	}
+}).resize();
