@@ -22,7 +22,7 @@ body {
 .logo {
 	color: $logo-color;
 	font-size: 1.5em;
-	line-height: 55px;
+	line-height: $header-height;
 	float: left;
 	margin-left: 15px;
 	@include breakpoint(tablet) {
