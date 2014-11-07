@@ -7,10 +7,19 @@ $susy: (
 
 body {
 	margin: 0;
+	@include breakpoint(tablet) {
+		padding-top: $header-height;
+	}
 }
 
 .header-main {
 	background: $header-bg;
+	border-bottom: 1px solid #eee;
+	@include breakpoint(tablet) {
+		position: fixed;
+		width: 100%;
+		top: 0;
+	}
 	.page-wrapper {
 		padding: 0;
 		@include breakpoint(tablet) {
@@ -84,6 +93,13 @@ body {
 
 .section-main {
 	margin: 45px 0 25px;
+}
+
+.divider {
+	background: url("../img/divider.png") center center no-repeat;
+	height: 19px;
+	margin: 25px 0;
+	width: 100%;
 }
 
 .aside-main {
