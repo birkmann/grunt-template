@@ -14,15 +14,14 @@ $menu-line-height: 	45px;
 
 .sub-toggle {
 	display: block;
-	width: 40px;
+	width: 100%;
 	height: 40px;
 	line-height: 30px;
-	text-align: center;
+	text-align: right;
 	position: absolute;
 	right: 15px;
 	top: 0;
-	font-weight: bold;
-	font-size: 2em;
+	font-size: 1.5em;
 	cursor: pointer;
 	@include breakpoint(tablet) {
 		display: none;
@@ -57,13 +56,14 @@ $menu-line-height: 	45px;
 
 			a {
 				display: block;
-				font-size: $nav-font-size;
+				font-size: $nav-font-size-mobile;
 				text-align: center;
 				line-height: 40px;
 				&:hover {
 					color: $text-color-100;
 				}
 				@include breakpoint(tablet) {
+					font-size: $nav-font-size;
 					padding: $menu-padding;
 					line-height: 1.8em;
 				}
