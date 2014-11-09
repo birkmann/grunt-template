@@ -95,13 +95,6 @@ body {
 	margin: 45px 0 25px;
 }
 
-.divider {
-	background: url("../img/divider.png") center center no-repeat;
-	height: 19px;
-	margin: 25px 0;
-	width: 100%;
-}
-
 .aside-main {
 	@include breakpoint(tablet) {
 		@include span(4 last); 
