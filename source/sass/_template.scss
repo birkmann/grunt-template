@@ -100,3 +100,30 @@ body {
 		@include span(4 last); 
 	}
 }
+
+.footer-main {
+	background: $footer-bg;
+	color: $footer-text-color;
+	padding: 50px 0;
+	a {
+		color: $footer-link-color;
+		font-weight: bold;
+		&:hover {
+			color: $footer-link-color-hover;
+		}
+	}
+	.col {
+		@include breakpoint(tablet) {
+			@include span(3); 
+		}
+		&.last {
+			@include breakpoint(tablet) {
+				@include span(3 last); 
+			}
+		}
+	}
+	.footer-bottom {
+		text-align: center;
+		margin: 50px auto;
+	}
+}
