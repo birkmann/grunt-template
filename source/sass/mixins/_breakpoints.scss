@@ -16,8 +16,8 @@
 		@media (min-width: 37.5em)  { @content; }
 	}
 	@else if $point == mobileonly {
-		// 37.5 x 16px = 600px
-		@media (max-width: 37.5em)  { @content; }
+		// 50 x 16px = 800px
+		@media (max-width: 50em)  { @content; }
 	}
 	@else if $point == touchonly {
 		@media (max-width: 70em)  { @content; }

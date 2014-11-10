@@ -1,7 +1,8 @@
 @import "susy";
 
 $susy: (
-	columns: 12, 
+	columns: 12,
+	gutters: .4,
 	global-box-sizing: border-box
 );
 
