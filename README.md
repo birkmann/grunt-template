@@ -1,6 +1,6 @@
 #grunt-template
 
-A simple responsive front-end template. Built using Grunt, Assemble, SASS, Susy Grid and jQuery.
+A simple front-end template for developing responsive websites. Built using Grunt, Assemble, SASS, Susy Grid and jQuery.
 
 Demo: http://rafaelbirkmann.de/lab/grunt-template/
 
