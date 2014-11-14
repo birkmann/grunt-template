@@ -4,4 +4,4 @@ A simple responsive front-end template. Built using Grunt, SASS, Susy Grid and j
 
 Demo: http://rafaelbirkmann.de/lab/grunt-template/
 
-https://github.com/Refugee/grunt-template/blob/master/preview.png
+![Preview](https://github.com/Refugee/grunt-template/blob/master/preview.png?raw=true)
